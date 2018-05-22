@@ -44,7 +44,7 @@ function generateReport(target, contract) {
           table.addRow(func.function, func.visibility, func.constant, func.returns, func.modifiers, func.Status)
         }
       });
-      console.log(table.toString() + '\n <br>');
+      console.log(table.toString() + '\n <br> \n');
     }
   })
 }

@@ -22,6 +22,7 @@ Legend:<br>
 | onTransfer(address,address,uint) | public     | false    | bool    |           | :heavy_check_mark::white_check_mark::warning:  |
 | onApprove(address,address,uint)  | public     | false    | bool    |           | :heavy_check_mark::white_check_mark::warning:  |
  <br>
+ 
 - Contract name: Controlled
 
 |         Function          | Visibility | Constant | Returns |   Modifiers    |                             Status                             |
