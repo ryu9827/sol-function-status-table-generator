@@ -1,0 +1,23 @@
+{
+  "name": "sol-function-status-table-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryu9827/sol-function-status-table-generator.git"
+  },
+  "author": "Bruce Li",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ryu9827/sol-function-status-table-generator/issues"
+  },
+  "homepage": "https://github.com/ryu9827/sol-function-status-table-generator#readme",
+  "dependencies": {
+    "ascii-table": "0.0.9",
+    "solidity-parser": "^0.3.0"
+  }
+}
