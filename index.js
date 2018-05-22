@@ -10,9 +10,9 @@ var target   = process.argv[2],
     contract = parser.parseFile(target);
 
 console.log('Legend:\n'
-+ ':white_check_mark: : the function is absolutely same with the framework.\n'
-+ ':ballot_box_with_check: : the function has slight difference with the framework, and the difference doesn\'t affect the logic and the feature.\n'
-+ ':small_red_triangle: : the function has different logic with framework, or it is totally self-developed.\n <br>');
++ ':heavy_check_mark: : the function is absolutely same with the framework.\n'
++ ':white_check_mark: : the function has slight difference with the framework, and the difference doesn\'t affect the logic and the feature.\n'
++ ':warning: : the function has different logic with framework, or it is totally self-developed.\n <br>');
 
 //Add remove border functions to ascii-table framework;
 asciiTable.prototype.removeBottomBorder = function() {
@@ -106,6 +106,6 @@ function parseFunctionPart(contract, part) {
     constant:   isConstant,
     returns:    returns,
     modifiers:  custom,
-    Status: ':white_check_mark::ballot_box_with_check::small_red_triangle: ',  
+    Status: ':heavy_check_mark::white_check_mark::warning: ',  
   }
 }

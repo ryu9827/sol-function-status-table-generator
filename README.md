@@ -10,23 +10,22 @@ $ npm install
 $ node index.js ~/contracts/mytoken.sol
 ```
 ## Output：
-Legend:
-:white_check_mark: : the function is absolutely same with the framework.
-:ballot_box_with_check: : the function has slight difference with the framework, and the difference doesn't affect the logic and the feature.
-:small_red_triangle: : the function has different logic with framework, or it is totally self-developed.
- <br>
+Legend:<br>
+:heavy_check_mark: : the function is absolutely same with the framework.<br>
+:white_check_mark: : the function has slight difference with the framework, and the difference doesn't affect the logic and the feature.<br>
+:warning: : the function has different logic with framework, or it is totally self-developed. <br>
 - Contract name: TokenController
 
 |             Function             | Visibility | Constant | Returns | Modifiers |                             Status                             |
 |----------------------------------|------------|----------|---------|-----------|----------------------------------------------------------------|
-| proxyPayment(address)            | public     | false    | bool    | payable   | :white_check_mark::ballot_box_with_check::small_red_triangle:  |
-| onTransfer(address,address,uint) | public     | false    | bool    |           | :white_check_mark::ballot_box_with_check::small_red_triangle:  |
-| onApprove(address,address,uint)  | public     | false    | bool    |           | :white_check_mark::ballot_box_with_check::small_red_triangle:  |
+| proxyPayment(address)            | public     | false    | bool    | payable   | :heavy_check_mark::white_check_mark::warning:  |
+| onTransfer(address,address,uint) | public     | false    | bool    |           | :heavy_check_mark::white_check_mark::warning:  |
+| onApprove(address,address,uint)  | public     | false    | bool    |           | :heavy_check_mark::white_check_mark::warning:  |
  <br>
 - Contract name: Controlled
 
 |         Function          | Visibility | Constant | Returns |   Modifiers    |                             Status                             |
 |---------------------------|------------|----------|---------|----------------|----------------------------------------------------------------|
-| Controlled()              | public     | false    |         |                | :white_check_mark::ballot_box_with_check::small_red_triangle:  |
-| changeController(address) | public     | false    |         | onlyController | :white_check_mark::ballot_box_with_check::small_red_triangle:  |
+| Controlled()              | public     | false    |         |                | :heavy_check_mark::white_check_mark::warning:  |
+| changeController(address) | public     | false    |         | onlyController | :heavy_check_mark::white_check_mark::warning:  |
  <br>
